@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="registration-form" role="form" aria-labelledby="form-title">
+      <h2 id="form-title">Create Your Account</h2>
+      <form id="registrationForm" action="#" method="post">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="name"> Full Name: <span class="required">*</span> </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            aria-required="true"
+          />
+          <span id="nameError" class="error-message" role="alert"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email"> Email: <span class="required">*</span> </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            aria-required="true"
+          />
+          <span id="emailError" class="error-message" role="alert"></span>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">
+            Password: <span class="required">*</span>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            aria-required="true"
+          />
+          <span id="passwordError" class="error-message" role="alert"></span>
+          <p class="password-note">
+            Password must be at least 8 characters long.
+          </p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+          <span id="phoneError" class="error-message" role="alert"></span>
+        </div>
+
+        <!-- Submit Button -->
+        <input
+          type="submit"
+          value="Sign Up"
+          aria-label="Submit registration form"
+        />
+      </form>
+
+      <p class="required-note">
+        <span class="required">*</span> indicates a required field.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
